@@ -84,7 +84,14 @@ div:nth-of-type(2){
     background-color: blanchedalmond;
 }
 
+h1::first-letter{
+    color: black;
+}
 
+p::selection{
+    color: white;
+    background-color: purple;
+}
 
 
 
