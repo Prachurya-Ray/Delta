@@ -29,3 +29,29 @@ h1, h3{
 nav ul li{
     color: palevioletred;
 }
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: cornflowerblue;
+    color: blue;
+}
+
+div > input {
+    background-color: darksalmon;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+
+input[type="password"]{
+    color: green;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
