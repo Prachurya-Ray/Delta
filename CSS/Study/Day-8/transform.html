@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Rotate</title>
+    <style>
+        section{
+            /* margin-top: 2px; */
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin: 2px;
+        }
+        div:nth-of-type(2n){
+            background-color: yellow;
+        }
+        div:nth-of-type(3n){
+            background-color: green;
+        }
+        #id1{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="id1">1</div>
+        <div id="id2">2</div>
+        <div id="id3">3</div>
+        <div id="id4">4</div>
+        <div id="id5">5</div>
+    </section>
+    
+</body>
+</html>
