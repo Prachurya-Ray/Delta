@@ -5,7 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      h2,span{
+        color: brown;
+      }
+      h4{
+        color: darkcyan;
+        text-align: end;
+      }
+      .card{
+        border: 2px solid black;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 300px;
+      }
+      img{
+        border-radius: 30px;
+        height: 200px;
+        width: 100%;
+      }
+      #pets{
+        display: flex;
+        justify-content: space-evenly;
+        /* flex-wrap: wrap; */
+      }
+
+      @media (max-width:600px){
+        #pets{
+          flex-wrap: wrap;
+        }
+      } 
+    </style>
   </head>
   <body>
     <h2><i>adoptme.com</i></h2>
