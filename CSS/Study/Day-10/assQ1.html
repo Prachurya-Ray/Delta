@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 1200px;
+            /* background-color: black; */
+
+            display: grid;
+            grid-template-columns: 100px;
+            grid-template-rows: 50px;
+            grid-gap: 10px 10px;
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6{
+            background-color: pink;
+        }
+        .box1{
+            grid-column: 1/13;
+        }
+        .box2{
+            grid-row: 2/11;
+            grid-column: 1/4;
+        }
+        .box3{
+            grid-row: 2/3;
+            grid-column: 4/9;
+        }
+        .box4{
+            grid-row: 3/11;
+            grid-column: 4/9;
+        }
+        .box5{
+            grid-row: 2/11;
+            grid-column: 9/13;
+        }
+        .box6{
+            grid-column: 1/13;
+        }
+
+        @media (max-width:720px){
+            .box1{
+                grid-column: 1/13;
+            }
+            .box2{
+                grid-row: 2/3;
+                grid-column: 1/13;
+            }
+            .box3{
+                grid-row: 3/ span 9;
+                grid-column: 1/span 3;
+            }
+            .box4{
+                grid-row: 3/span 9;
+                grid-column: 4/13;
+            }
+            .box5{
+                grid-row: 12/13;
+                grid-column: 1/span 3;
+            }
+            .box6{
+                grid-column: 4/13;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">ads</div>
+        <div class="box2">ads</div>
+        <div class="box3">ads</div>
+        <div class="box4">ads</div>
+        <div class="box5">ads</div>
+        <div class="box6">ads</div>
+    </div>
+</body>
+</html>
